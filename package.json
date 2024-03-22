@@ -1,0 +1,14 @@
+{
+  "name": "gitbghbmh",
+  "version": "1.0.0",
+  "description": "왠지쓰는게좋을거같아서적어봄",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bmh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

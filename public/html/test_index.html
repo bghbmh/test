@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>업로드</title>
+	
+
+	<!-- 공통 스타일 -->
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/upload.css">
+<!-- // Stylesheets -->
+
+<!-- Scripts -->
+<!-- <script defer src="../assets/fontawesome/js/brands.js"></script>
+<script defer src="assets/fontawesome/js/solid.js"></script> -->
+<script defer src="assets/fontawesome/js/all.js"></script>
+
+
+</head>
+
+<body>
+
+	<main class="common">
+		<div class="grid itemList testform" data-tablet-columns="2" data-mobile-columns="1">
+			<div class="col12 header">
+				<button type="button" class="btn" aria-label="삭제"><i class="fa-solid fa-trash" aria-hidden="true"></i></button>
+				<button type="button" class="btn" aria-label="추가"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+			</div>
+
+			<!-- 처음추가할때 -->
+			<div class="col4 item">
+				<header class="d-flex">
+					<label class="margin-left-auto" title="메인에 보이게 할지말지 선택하는 버튼">
+						<span class="">선택하기</span>
+						<input type="checkbox" data-ui-action="toggle" name="mainopen">
+					</label>
+				</header>
+
+				<div class="cnts grid">
+					<div class="col5 ">
+
+						<div class="upload fileList type2 w-100per">
+							<label class="btn" data-ui-placeholder="파일을 선택하세요test">
+								
+								<input type="file" name="image" data-ui-template="main" accept="image/*" aria-label="파일을 선택하세요" title="파일을 선택하세요">
+								<i class="fa-solid fa-plus" aria-hidden="true"></i>
+							</label>
+
+								<!-- 
+								<figure>
+									<img src="../../../m/assets/img/main/sample.png">
+									<figcaption>sample.png
+										<div class="option">
+											<span>7.6KB</span>
+										</div>
+										<div class="ctrl">
+											<button type="button" class="btn" title="파일 삭제 버튼" aria-label="파일 삭제 버튼"><i class="fa-solid fa-trash" aria-hidden="true"></i></button>
+											<button type="button" class="btn" title="파일 수정 버튼" aria-label="파일 수정 버튼"><i class="fa-solid fa-pen" aria-hidden="true"></i></button>
+										</div>	
+									</figcaption>
+								</figure>												
+								-->
+						</div>
+
+						<div class="upload fileList type3 w-100per margin-top-1"> <!-- 파일 업로드할때 -->
+							<label class="btn" data-ui-placeholder="파일을 선택하세요_testTest">	
+								<input type="file" name="image" data-ui-template="sub" accept="image/*" aria-label="파일을 선택하세요" title="파일을 선택하세요" multiple> <!-- multiple -->	
+								<i class="fa-regular fa-image" aria-hidden="true"></i>
+							</label>
+		
+							
+								<!-- 
+								<figure class="item">
+									<img src="../../../m/assets/img/main/sample.png">
+									<figcaption class="figcaption">sample.png
+										<dl class="option">
+											<dt class="title">sample.png</dt>
+											<dd>7.6KB</dd>
+										</dl>
+										<div class="ctrl">
+											<button type="button" class="btn" title="파일 삭제 버튼" aria-label="파일 삭제 버튼"><i class="fa-solid fa-trash" aria-hidden="true"></i></button>
+											<button type="button" class="btn" title="파일 수정 버튼" aria-label="파일 수정 버튼"><i class="fa-solid fa-pen" aria-hidden="true"></i></button>
+										</div>	
+									</figcaption>
+								</figure>
+								 -->
+						</div>
+							
+					</div>
+
+					<div class="col7 d-flex flex-column align-items-start gap3">
+						<label class="w-100per">	
+							<span class="guide">test_titlexxx</span>						
+							<input type="text" placeholder="" name="title" value="선택하세요_testTest" required >
+						</label>
+
+						<label class="w-100per">	
+							<span class="guide">test_123456</span>						
+							<input type="text" placeholder="" name="title" required >
+						</label>
+	
+						<label class="w-100per">	
+							<span class="guide">test_select</span>						
+							<select name="category">
+								<option value="default">카테고리</option>
+								<option value="ca11">ca11</option>
+								<option value="ca22">ca22</option>
+							</select>
+						</label>
+
+						<div class="upload type1 w-100per"> <!-- 파일 업로드할때 -->
+							<span class="guide">test_파일을 선택하세요</span>
+							<label class="btn" data-ui-template="list" data-ui-placeholder="">	
+								<input type="file" name="samplepage" aria-label="파일을 선택하세요" title="파일을 선택하세요" multiple> <!-- multiple -->	
+								<i class="fa-solid fa-paperclip" aria-hidden="true"></i>
+							</label>
+		
+							<div class="fileList">
+								<!-- 
+								<figure class="item">
+									<img src="../../../m/assets/img/main/sample.png">
+									<figcaption class="figcaption">sample.png
+										<dl class="option">
+											<dt class="title">sample.png</dt>
+											<dd>7.6KB</dd>
+										</dl>
+										<div class="ctrl">
+											<button type="button" class="btn" title="파일 삭제 버튼" aria-label="파일 삭제 버튼"><i class="fa-solid fa-trash" aria-hidden="true"></i></button>
+											<button type="button" class="btn" title="파일 수정 버튼" aria-label="파일 수정 버튼"><i class="fa-solid fa-pen" aria-hidden="true"></i></button>
+										</div>	
+									</figcaption>
+								</figure>
+								 -->
+							</div>
+							
+						</div>
+	
+						<label class="w-100per">
+							<span class="guide">test_guideTitle</span>
+							<span class="error" aria-live="polite"></span>
+							<input type="text" placeholder="test_샘플이름" name="samplename" required>
+						</label>
+	
+						<label class="w-100per">
+							<select name="c1234">
+								<option value="default">카테고리</option>
+								<option value="ca11">ca11</option>
+								<option value="ca22">ca22</option>
+							</select>
+						</label>
+					</div>
+				</div>			
+				
+				<footer class="">					
+					<button type="submit" class="btn"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>저장</button>
+				</footer>
+			</div>
+			<!-- //처음추가할때 -->
+
+
+
+		</div>
+	</main>
+
+
+
+<script>
+
+	// 키다운이나 포커스 들어갔을때 라벨 이동하는거, input에 required 속성 없을 떄 인터렉션 넣을방법, 구글 로그인 보고 참고하기, 예전에 만들어둔 파일 찾아보기 
+		window.URL = window.URL || window.webkitURL;
+
+const fileSelect = document.getElementById("fileSelect"),
+	fileElem = document.getElementById("fileElem"),
+	fileList = document.getElementById("fileList");
+
+
+	document.querySelector(".testform").addEventListener("click", e => {
+
+		let t = e.target.closest('[type]') || e.target.closest('[name]');
+
+		if( !t ) return;
+
+		//console.log("click elem : ", t.type," - ", t);
+
+		switch(t.type){
+			case "file":				
+
+				if( t.dataset.listener === "change" ) return;				
+
+				t.addEventListener( "change", function() {
+					console.log( "22222 type1 - ", t.files );
+
+					let box = t.closest(".fileList");
+
+					if( t.parentNode.parentNode.querySelector(".fileList") ){
+						box = t.parentNode.parentNode.querySelector(".fileList") ;
+						console.log("box11 - ", box);
+						[...uploadImageType2(t.files).children].forEach(ch => box.appendChild(ch));
+					} else {
+						console.log("box22 - ", box);
+						[...uploadImageType2(t.files).children].forEach(ch => box.insertBefore(ch,t.parentNode));
+					}
+
+					// 임시_리스너 한번만 붙이게, 추가 임시 설정함
+					t.dataset.listener = 'change';
+					// 삭제는 나중에하고 우선은 안보이게만 처리
+					if( t.closest('.type2') ){
+						t.parentNode.style.display = "none";							
+					};
+					//setTimeout(() => {console.log("this is the third message") }, 1000) ;
+				});
+				
+			break;
+			case "submit":
+				//console.log(" file - ", t);
+
+				//showError(t.closest(".item").querySelector(".cnts").querySelectorAll('input'));
+
+				let testData = {};
+				t.closest(".item")
+				.querySelectorAll('input')
+				.forEach( input => {
+					//console.log( input , " - ",input.type, input.name, input.checked );
+
+					switch(input.type){
+						case "text":
+						case "number":
+							testData[input.name] = input.value;
+							break;
+						case "checkbox":
+						case "radio":
+							testData[input.name] = input.checked;
+							break;
+						case "file":
+
+							if( !testData.hasOwnProperty(input.name) ){
+								testData[input.name] = [];
+							}
+
+							let filebox = input.parentNode.parentNode.querySelector(".fileList") || input.closest(".fileList");	
+						
+							let files = filebox.querySelectorAll(".item");
+							
+							console.log( "gggg - ", filebox, files );
+
+							for( let i=0; i<files.length; i++ ){
+								input.dataset.uiTemplate ? files[i].dataset.template = input.dataset.uiTemplate :'';
+								testData[input.name].push(testFileinfo(files[i].dataset));
+							}
+							
+
+							break;
+						default:
+							break;
+					}
+
+				});
+
+				t.closest(".item").querySelectorAll('select').forEach( select => testData[select.name] = select.value );
+
+				console.log( t.type , " - ",testData, JSON.stringify(testData) ); //JSON.stringify(testData)
+
+			break;
+		}
+
+		// switch(e.type){
+		// 	case "click":
+		// 		fileSelect.addEventListener( "change", function (e) {
+		// 			console.log("fileSelect - ", e, this.querySelector("[type='file']").files)
+		// 			uploadImageType2(this.querySelector("[type='file']").files)
+					
+		// 		}, false);
+		// 	break;
+		// 	default:
+		// 		console.log(" no type ");
+		// 	break;
+		// }
+		
+	});
+
+	function testFileinfo(fileinfo){
+		let t = {};
+		for(let key in fileinfo ) t[key] = fileinfo[key];
+		return t;
+	}
+
+
+	function showError(obj) {
+
+		console.log(typeof obj, " - ", obj)
+
+		obj.forEach( input => console.log( input , " - ",input.type, input.name, input.checked ))
+
+		if (email.validity.valueMissing) {
+			// If the field is empty,
+			// display the following error message.
+			emailError.textContent = "You need to enter an email address.";
+		} else if (email.validity.typeMismatch) {
+			// If the field doesn't contain an email address,
+			// display the following error message.
+			emailError.textContent = "Entered value needs to be an email address.";
+		} else if (email.validity.tooShort) {
+			// If the data is too short,
+			// display the following error message.
+			emailError.textContent = `Email should be at least ${email.minLength} characters; you entered ${email.value.length}.`;
+		}
+
+		// Set the styling appropriately
+		emailError.className = "error active";
+	}
+
+
+	function uploadImageType2(files) {
+
+		console.log("handleFiles - ", files)
+		let html = CreateElement( { tag : "div", class:"html-template" } );
+
+		if (!files.length) {
+			html.innerHTML = `<label id="fileSelect" class="btn" data-ui-action="load" data-ui-placeholder="파일을 선택하세요test" aria-label="파일 선택 버튼" title="파일 선택 버튼">
+							<input type="file" accept="image/*">
+							<i class="fa-solid fa-plus" aria-hidden="true"></i>
+						</label>`;
+		} else {
+			
+			
+			for (let i = 0; i < files.length; i++) {
+				const figure = CreateElement( { tag : "figure", class:'item' } );
+				// fileNew.appendChild(figure);
+				figure.dataset.fileName = files[i].name;
+				figure.dataset.fileSize = files[i].size;
+
+				const img = CreateElement( { tag : "img", class:'uploading', src: `${window.URL.createObjectURL(files[i])}`, title:`${files[i].name}`, "aria-label":`${files[i].name}`, alt:`${files[i].name}` } );				
+				img.onload = function () {
+					window.URL.revokeObjectURL(this.src);
+				};
+				figure.appendChild(img);
+
+				const figcaption = CreateElement( { tag : "figcaption", class:'figcaption'} );
+				figcaption.innerHTML =`
+					<dl class="option">
+						<dt class="title">${files[i].name}</dt><dd>${returnFileSize(files[i].size)}</dd>
+					</dl>`;				
+
+				figcaption.innerHTML += `
+				<div class="ctrl">
+					<button type="button" class="btn" title="파일 삭제 버튼" aria-label="파일 삭제 버튼"><i class="fa-solid fa-xmark"></i></button>
+					<!-- button type="button" class="btn" title="파일 수정 버튼" aria-label="파일 수정 버튼"><i class="fa-solid fa-pen" aria-hidden="true"></i></button -->
+				</div>`;
+
+				figure.appendChild(figcaption);
+				html.appendChild(figure);
+			}
+
+			
+		}
+
+		return html;
+	}
+
+	function dragenter(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	}
+
+	function dragover(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	}
+
+	function drop(e) {
+		e.stopPropagation();
+		e.preventDefault();
+
+		const dt = e.dataTransfer;
+		const files = dt.files;
+
+		handleFiles(files);
+	}
+
+	function returnFileSize(number) {
+		if (number < 1024) {
+			return number + "bytes";
+		} else if (number >= 1024 && number < 1048576) {
+			return (number / 1024).toFixed(1) + "KB";
+		} else if (number >= 1048576) {
+			return (number / 1048576).toFixed(1) + "MB";
+		}
+	}
+
+	function CreateElement(attributes = {}) { // { tag : "div", class: "sample", ...} 
+		if (!attributes.hasOwnProperty("tag")) return alert("no Tag, require the Tag");
+
+		let tag = document.createElement(attributes.tag);
+		for (let prop in attributes) {
+			if (prop == "tag") continue;
+			tag.setAttribute(prop, attributes[prop]);
+		}
+		return tag;
+	}
+	
+</script>
+
+
+</body>
+</html>
