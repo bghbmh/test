@@ -14,7 +14,7 @@ app.get('/', function (request, response) {
 		console.log("filelist - ", filelist);
 	});
 	//fs.readdir('./data', function (error, filelist) {
-		var title = 'Welcome';
+		var title = 'Welcome'; 
 
 		try{
 			// const jsonFile = fs.readFileSync('./public/data/test.json', 'utf8');
